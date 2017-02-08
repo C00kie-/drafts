@@ -14,6 +14,30 @@
 //   ft_memset(e, 0, sizeof(t_env));
 // }
 
+
+/*
+
+t _room *		room_new(char *name, int x, int y);
+	initialise t_room *nroom
+	attribute name, x et y a nouvelle room
+	retourne nroom;
+
+
+
+room_push(t_room** rooms, char *name, int x, int y);
+	initialise *c_rooms; //current room
+
+	si rooms vide  *rooms
+		*rooms = new room()
+
+	else
+		placer crooms sur debut de list rooms
+		parcourir la list jusqu’au dernier element 
+		lier un nouveau éléments room a ce dernier element. 
+
+
+*/
+
 t_room		*room_new(char *name, int x, int y)
 {
 	t_room *nroom;
